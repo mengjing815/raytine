@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <title>雷霆世纪官网-雷霆世纪、雷霆个性定制游戏主机、雷霆世纪台式机、鼠标键盘官方正品商城！</title>
+    <meta name="keywords" content="雷霆世纪官网-雷霆世纪、雷霆个性定制游戏主机、雷霆世纪台式机、鼠标键盘官方正品商城！">
+    <meta name="description" content="雷霆世纪官网-雷霆世纪、雷霆个性定制游戏主机、雷霆世纪台式机、鼠标键盘官方正品商城！">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/commons.css"/>
+    <link type="text/css" rel="stylesheet" href="css/user.css"/>
+</head>
+<body>
+<div class="register_wrap">
+    <div class="bugfix_ie6 dis_none">
+        <div class="n-logo-area clearfix">
+            <a href="" class="fl-l n-logo-area2"><img src="http://static.leishen.cn/activity/images/leiting/logo2.0.png" /></a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="n-frame device-frame reg_frame">
+
+            <div class="title-item dis_bot35 t_c">
+                <h4 class="title-big">注册雷霆官网帐号 </h4>
+            </div>
+            <div class="regbox" id="register_box">
+                <form action="user.php" method="post" name="formUser" onsubmit="return register();">
+                    <input type="hidden" value="C4E1AB9A7DE79D7C750E8916875E7DBE" id="validate">
+                    <div class="phone_step1">
+                        <input type="hidden" id="sendtype">
+
+                        <div class="inputbg">
+                            <label class="labelbox">
+                                <input type="text" name="username" id="username" onblur="is_registered(this.value);" onkeyup="is_registered(this.value);" placeholder="用户名">
+                            </label>
+                            <span class="t_text">用户名</span>
+                            <span class="error_icon"></span>
+                        </div>
+                        <div class="err_tip" id="username_notice"> <em></em> </div>
+
+                        <div class="inputbg">
+                            <label class="labelbox">
+                                <input name="email" type="text" id="email" onblur="checkEmail(this.value);" onkeyup="checkEmail(this.value);" placeholder="email">
+                            </label>
+                            <span class="t_text">email</span>
+                            <span class="error_icon"></span>
+                        </div>
+
+                        <div class="inputbg">
+                            <label class="labelbox">
+                                <input type="password" name="password" id="password1" onblur="check_password(this.value);" onkeyup="check_password(this.value);checkIntensity(this.value);"  placeholder="密码">
+                            </label>
+                            <span class="t_text">密码</span>
+                            <span class="error_icon"></span>
+                        </div>
+                        <div class="err_tip" id="password_notice"> <em></em> </div>
+
+                        <div class="inputbg">
+                            <label class="labelbox">
+                                <input name="confirm_password" type="password" id="conform_password" onblur="check_conform_password(this.value);" onkeyup="check_conform_password(this.value);" placeholder="确认密码">
+                            </label>
+                            <span class="t_text">确认密码</span>
+                            <span class="error_icon"></span>
+                        </div>
+                        <div class="err_tip" id="conform_password_notice"> <em></em> </div>
+
+                        <div class="inputbg">
+                            <label class="labelbox">
+                                <input name="extend_field5" id="extend_field5" type="text" placeholder="手机号"/>
+                            </label>
+                            <span class="t_text" id="extend_field5i">手机</span>
+                            <span class="error_icon"></span></div>
+                        <!--验证-->
+                        <div class="inputbg">
+                            <label class="labelbox" style="float:left;">
+                                <input name="sms_code" id="sms_code" type="text" size="25" placeholder="请输入短信验证码" style="width:213px;" required/>
+                            </label>
+                            <label class="inputbg" style="float:left;">
+                                <input type="button" id="btn" onclick="getverifycode1('extend_field5', '手机');" value="获取验证码" style="width:90px;margin-left:6px;background-color:red;color:#fff;font-size:14px;height:45px;line-height:40px;">
+                            </label>
+                            <span class="t_text" id="extend_field5i">手机</span>
+                            <span class="error_icon"></span>
+                        </div>
+                        <div class="err_tip"><em></em></div>
+
+                        <div class="law">
+                            <label>
+                                <input name="agreement" type="checkbox" value="1" checked="checked"  tabindex="5" class="remember-me"/>
+                                我已看过并接受《<a href="http://www.leishen.cn/article.php?cat_id=-1" style="color:blue" target="_blank">用户协议</a>》</label>
+                        </div>
+                        <div class="err_tip"> <em></em> </div>
+                        <div class="fixed_bot mar_phone_dis1">
+                            <input name="act" type="hidden" value="act_register" >
+                            <input type="hidden" name="back_act" value="" />
+                            <input type="hidden" id="sms_code_login" name="sms_code_login" value="494c08f7a144d3cc4cfa661ed1244039" />
+                            <input name="Submit" type="submit" value="同意协议并注册" class="btn332 btn_reg_1 submit-step">
+                        </div>
+                        <div class="trig">已有账号? <a href="" class="trigger-box">点击登录</a> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="n-footer">
+        <div class="nl-f-nav">
+            <span> </span>
+        </div>
+        <p class="nf-intro"><span>© 2014-2017 raytine.All rights reserved. 雷霆世纪版权所有.</span></p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+
+<!--<script type="text/javascript" src="js/sms.js"></script>
+<script>
+    $(function(){
+
+//加载清空文本框
+        $("input:text,input:password").val("");
+
+//提示文字隐藏显示效果
+//登录界面
+        $(".enter-area .enter-item").focus(function(){
+            if($(this).val().length==0){
+                $(this).siblings(".placeholder").addClass("hide");
+            }
+        }).blur(function(){
+            if($(this).val().length==0){
+                $(this).siblings(".placeholder").removeClass("hide");
+            }
+        }).keyup(function(){
+            if($(this).val().length>0){
+                $(this).siblings(".placeholder").addClass("hide");
+            }else{
+                $(this).siblings(".placeholder").removeClass("hide");
+            }
+        });
+//注册界面
+        $(".inputbg input").focus(function(){
+            if($(this).val().length>0){
+                $(this).parent().siblings(".t_text").addClass("hide");
+            }
+        }).blur(function(){
+            if($(this).val().length==0){
+                $(this).parent().siblings(".t_text").removeClass("hide");
+            }
+        }).keyup(function(){
+            if($(this).val().length>0){
+                $(this).parent().siblings(".t_text").addClass("hide");
+            }else{
+                $(this).parent().siblings(".t_text").removeClass("hide");
+            }
+        });
+
+
+    })
+    var process_request = "正在处理您的请求...";
+    var username_empty = "用户名不能为空。";
+    var username_shorter = "用户名长度不能少于 3 个字符。";
+    var username_invalid = "用户名只能是由字母数字以及下划线组成。";
+    var password_empty = "登录密码不能为空。";
+    var password_shorter = "登录密码不能少于 6 个字符。";
+    var confirm_password_invalid = "两次输入密码不一致";
+    var email_empty = "Email 为空";
+    var email_invalid = "Email 不是合法的地址";
+    var agreement = "您没有接受协议";
+    var msn_invalid = "msn地址不是一个有效的邮件地址";
+    var qq_invalid = "QQ号码不是一个有效的号码";
+    var home_phone_invalid = "家庭电话不是一个有效号码";
+    var office_phone_invalid = "办公电话不是一个有效号码";
+    var mobile_phone_invalid = "手机号码不是一个有效号码";
+    var msg_un_blank = "用户名不能为空";
+    var msg_un_length = "用户名最长不得超过7个汉字";
+    var msg_un_format = "用户名含有非法字符";
+    var msg_un_registered = "用户名已经存在,请重新输入";
+    var msg_can_rg = "可以注册";
+    var msg_email_blank = "邮件地址不能为空";
+    var msg_email_registered = "邮箱已存在,请重新输入";
+    var msg_email_format = "邮件地址不合法";
+    var msg_blank = "不能为空";
+    var no_select_question = "您没有完成密码提示问题的操作";
+    var passwd_balnk = "- 密码中不能包含空格";
+    var username_exist = "用户名 %s 已经存在";
+</script>-->
+</body>
+</html>
